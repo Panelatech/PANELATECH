@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>    
+    <img src="panelita.png" alt=""
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <p style="text-align:center"> <h1>Modelo Fintech para Paneleros </h1></p>
+        </h1>
+        <div class="tabs">
+            <button class="tablink" onclick="openTab(event, 'Intro')">Captación e Información</button>
+            <button class="tablink" onclick="openTab(event, 'Score')">Score Crediticio</button>
+            <button class="tablink" onclick="openTab(event, 'Amortizacion')">Amortización Francés</button>
+            <button class="tablink" onclick="openTab(event, 'NFT')">Tokenizacion</button>
+        </div>
+
+        <div id="Intro" class="tabcontent">
+            <h2>Captación e Información</h2>
+            <p>Complete el formulario para iniciar el proceso:</p>
+            <a href="https://forms.gle/9evQmiCM2CzKQzdv5" target="_blank">Formulario de Google</a>
+        </div>
+
+        <div id="Score" class="tabcontent">
+            <h2>Principios del Score Crediticio</h2>
+            <ul>
+                <li>Historial de pagos</li>
+                <li>Monto adeudado</li>
+                <li>Duración del crédito</li>
+                <li>Tipos de crédito</li>
+                <li>Crédito nuevo</li>
+            </ul>
+            <a href="https://docs.google.com/spreadsheets/d/1yCSPRePPjvrHJkunB178bRpkZ8EJrKeKw0a8S-xt1Ts/edit?usp=sharing" target="_blank">Ver Score Crediticio (Excel)</a>
+        </div>
+
+        <div id="Amortizacion" class="tabcontent">
+            <h2>Amortización Francés</h2>
+            <p>Presione el botón para calcular el plan de amortización:</p>
+            <button onclick="calculateAmortization()">Calcular Amortización</button>
+            <a id="amortization-link" href="https://docs.google.com/spreadsheets/d/10OqSIBCZZRbcW6raLbUaUwI2vZW5yauTpNgSrO61lZ8/edit?usp=sharing" target="_blank" style="display:none;">Ver Amortización (Excel)</a>
+        </div>
+
+        <div id="NFT" class="tabcontent">
+            <h2>Mis NFTs</h2>
+            <div id="nft-gallery"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

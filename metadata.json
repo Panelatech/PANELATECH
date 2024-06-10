@@ -1,0 +1,12 @@
+  {
+    "name": "Panela NFT 10kg",
+    "description": "NFT para vendedores de panela",
+    "image": "ipfs://QmdkHgPUPqY6JPYCHKqGHs2KaS2BqWhG59nyxjkhf1zYam",
+    "attributes": [
+      {
+        "trait_type": "Calidad",
+        "value": "Alta"
+      }
+    ]
+  }
+  
